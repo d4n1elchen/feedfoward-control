@@ -55,6 +55,13 @@
     \item Find a state-space model (in control canonical form shown below) of this flexural stage.
 
     \begin{align*}
+      \dot{x} &= Ax + Bu \\
+      y &= Cx
+    \end{align*}
+
+    Where
+
+    \begin{align*}
       A &= \left(\begin{array}{cccccc} -1.17 & -50.3 & -45.9 & -685.0 & -392.0 & -1966.0\\ 1.0 & 0 & 0 & 0 & 0 & 0\\ 0 & 1.0 & 0 & 0 & 0 & 0\\ 0 & 0 & 1.0 & 0 & 0 & 0\\ 0 & 0 & 0 & 1.0 & 0 & 0\\ 0 & 0 & 0 & 0 & 1.0 & 0 \end{array}\right) \\[2ex]
       B &= \left(\begin{array}{c} 1.0\\ 0\\ 0\\ 0\\ 0\\ 0 \end{array}\right) \\[2ex]
       C &= \left(\begin{array}{cccccc} 0 & 11.9 & 4.98 & 540.0 & 130.0 & 5622.0 \end{array}\right)
