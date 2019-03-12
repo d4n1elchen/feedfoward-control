@@ -71,7 +71,7 @@
 
     \item Find the inverse system model.
 
-    \begin{align}
+    \begin{align*}
       \begin{split}
       \dot{x}_\text{inv} &= A_\text{inv} x_\text{inv} + B_\text{inv} y^{(r)}_d \\
              &= [A - BK_y] x + [BB_y] y^{(r)}_d \\
@@ -84,7 +84,7 @@
              &= [\frac{-CA^r}{CA^{r-1}B}] x + [\frac{1}{CA^{r-1}B}] y^{(r)}_d \\
              &= \left(\begin{array}{cccccc} 0.75 & 4.88 & 35.0 & 212.0 & 392.0 & 1966.0 \end{array}\right) x + 0.0842\ y^{(r)}_d
       \end{split}
-    \end{align}
+    \end{align*}
 
     \clearpage
 
@@ -214,9 +214,11 @@
 
   \section{Problem 2}
   Consider a general transfer function for a linear system with relative degree r=n-m (n greater than or equal to m ).
-  $$
-  G(s) = \frac{b_0 s^m + b_1 s^{m-1} + \dots + b_m}{s^n + a_1 s^{n-1} + \dots + a_n}
-  $$
+
+  \begin{equation}
+    G(s) = \frac{b_0 s^m + b_1 s^{m-1} + \dots + b_m}{s^n + a_1 s^{n-1} + \dots + a_n}
+  \end{equation}
+
   Find its description in control canonical form. Show that you need to differentiate the
   output r-times to find the inverse input.
 
@@ -243,14 +245,14 @@
     \end{bmatrix} x
   \end{align}
 
-  Apply the generalized form to find the inverse input
+  Apply the generalized form with k times differentiation to find the inverse input
 
   \begin{equation}
     u_{ff} = \frac{y^{(k)}_d - CA^kx}{CA^{k-1}B}
     \label{eq:inverseinput}
   \end{equation}
 
-  By equation (\ref{eq:inverseinput}), we can found that to get the inverse input, the denominator must not equal to zero, that is
+  By equation (\ref{eq:inverseinput}), we can figure out that to get the inverse input, the denominator must not equal to zero, that is
 
   \begin{equation}
     CA^{k-1}B \neq 0
