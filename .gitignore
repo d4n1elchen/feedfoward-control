@@ -31,6 +31,7 @@ __pycache__
 ## Build tool auxiliary files:
 *.fdb_latexmk
 *.synctex
+*.synctex(busy)
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
@@ -206,3 +207,9 @@ auto/
 
 # Windows files
 Thumbs.db
+
+# Matlab/Simulink temp files
+*.slxc
+*.autosave
+*.asv
+slprj

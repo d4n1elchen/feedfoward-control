@@ -2,10 +2,11 @@
 
 \usepackage[shortlabels]{enumitem}
 \usepackage{amsmath}
+\usepackage{graphicx}
 
 \title{Feedforward Control Homework 1}
 \date{2019-03-10}
-\author{Chien-Ming Chen}
+\author{Chien-Ming Chen, Na}
 
 \begin{document}
   \maketitle
@@ -66,7 +67,32 @@
       \end{split}
     \end{align}
 
+    \clearpage
+
     \item Simulate the inverse system model using MATLAB(lsim command) to find the inverse feedforward input. The desired acceleration profile is shown below.
+    \item Apply this feedforward input to the system model found in part (b) to verify that the output tracking of y is achieved (use lsim command again).
+
+    \begin{figure}[h]
+      \includegraphics[width=15cm]{result_de}
+      \caption{Simulation result}
+      \centering
+    \end{figure}
+
+    \clearpage
+
+    \item Investigate the effect of 5\% variation in the DC gain of the system; in particular simulate the response of the system (using the original inverse input) when the numerator constant 5625 has changed by 5\% and -5\%. What is the maximum error in the output? How could this error be reduced?
+
+    \begin{figure}[h]
+      \includegraphics[width=15cm]{result_f_1}
+      \caption{System changed by -5\%}
+      \centering
+    \end{figure}
+
+    \begin{figure}[h]
+      \includegraphics[width=15cm]{result_f_2}
+      \caption{System changed by 5\%}
+      \centering
+    \end{figure}
 
 
 
