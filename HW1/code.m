@@ -26,7 +26,7 @@ sys_inv.u = 'y_d_r';
 sys_inv.y = 'u_ff';
 
 %% Add error
-e = -0.0;
+e = -0.05;
 b_err = b;
 b_err(end) = b_err(end)*(1+e);
 
